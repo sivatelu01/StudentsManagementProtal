@@ -1,0 +1,58 @@
+/* src/components/Dashboard.css */
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive grid */
+    gap: 20px;
+    padding: 20px;
+    background-image: url('https://png.pngtree.com/background/20210709/original/pngtree-school-season-welcome-new-students-blackboard-hand-painted-picture-image_923676.jpg'); /* Background image */
+    background-size: cover; 
+    background-position: center;
+    color: white; 
+}
+
+.student-images {
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap; 
+}
+
+.student-image {
+    margin: 5px; 
+    width: 50px; 
+    height: 50px;
+    border-radius: 50%; 
+    object-fit: cover; 
+}
+
+.stats-card {
+    background-color: white; 
+    color: white; 
+    padding: 20px; 
+    border-radius: 8px; 
+    margin: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.2s; 
+}
+
+.stats-card:hover {
+    transform: scale(1.05); 
+    background-color: blue; 
+}
+
+.stats-card h3 {
+    margin: 0;
+    font-size: 1.5rem; 
+    font-weight: bold; 
+}
+
+@media (max-width: 768px) {
+    .stats-card {
+        width: 150px; 
+        padding: 15px; 
+    }
+
+    .dashboard {
+        padding: 10px; 
+    }
+}
